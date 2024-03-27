@@ -1,0 +1,69 @@
+/* colors ------------------------------------------ */
+:root{
+    --mainBgColor: rgb(73, 82, 64);
+    --mainWidgetColor: rgb(24, 71, 24);
+    --secondWidgetColor:rgb(92, 90, 90);
+    
+}
+
+/* common ---------------------------------------------- */
+
+html{
+    height: 100vh; 
+    font-family: "Armata", sans-serif;
+}
+
+body{
+    height: 95%;
+}
+
+/* homepage -------------------------------------------- */
+
+.homepage{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--mainBgColor);
+}
+
+.userInfo,
+.expensesGraph,
+.latestExpenses{
+    border-radius: 15px ;
+    background-color: var(--mainWidgetColor);
+}
+
+.userInfo{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 25px 25px 0 25px;
+    padding: 5px;
+}
+
+.content{
+    display: flex;
+    margin: 25px;
+    gap: 15px;
+    min-height: 75% ;
+}
+
+.expensesGraph{
+    width: 100%;
+    padding: 5px;
+}
+
+.latestExpenses{
+    width: 15%;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.expensesHeader{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-size: 14pt;
+}
