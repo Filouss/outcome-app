@@ -1,9 +1,9 @@
 /* colors ------------------------------------------ */
 :root{
-    --mainBgColor: rgb(187, 199, 176);
-    --mainWidgetColor: rgb(124, 133, 113);
-    --secondWidgetColor:rgb(92, 90, 90);
-    
+    --mainBgColor: #89B6A5;
+    --mainWidgetColor: #C9EDDC;
+    --secondWidgetColor:#2C0703;
+    --buttonColor: #1a4ec6;
 }
 
 /* common ---------------------------------------------- */
@@ -31,6 +31,7 @@ body{
 .latestExpenses{
     border-radius: 15px ;
     background-color: var(--mainWidgetColor);
+    /* transition: height 0.3s ease;  */
 }
 
 .userInfo{
@@ -56,10 +57,35 @@ body{
 
 .latestExpenses{
     width: 15%;
-    gap: 25px;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 8px;
+}
+
+.expensesContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.showBtn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: 2px solid black;
+    padding: 8px 0 0 0;
+}
+
+.showExpenses{
+    background-color: var(--buttonColor);
+    border-radius: 5px;
+    border: none;
+    color: aliceblue;
+    height: 25px;
+    width: 70%;
+    align-content: center;
+    
 }
 
 .expensesHeader{
@@ -67,4 +93,41 @@ body{
     justify-content: center;
     padding: 5px;
     font-size: 14pt;
+    border-bottom: 2px black solid;
+}
+
+.listOfExpenses{
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0;
+    gap: 5px;
+    display:block;
+}
+
+.listOfExpenses li{
+    background-color: var(--secondWidgetColor);
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 5px 0px;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+.amount{
+    margin-left: 3px;
+    font-weight: bold;
+
+}
+
+.trader{
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+ .homepage div:hover{
+    /* transform: scale(1.5);
+    margin-right: 6%; /* fallback for ancient browsers that don't support calc() */
+    /* margin-right: calc(5% + 1px);
+    margin-left: 5%; */
 }
